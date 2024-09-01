@@ -2,6 +2,8 @@ package jp.dressigroom;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Id;
 
 
 /**
@@ -25,5 +27,6 @@ import jakarta.persistence.Entity;
  */
 @Entity
 public class MyEntity extends PanacheEntity {
+    public Long id;
     public String field;
 }
